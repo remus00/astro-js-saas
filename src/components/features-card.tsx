@@ -1,6 +1,7 @@
 import type { HTMLAttributes } from 'react';
 import { cn } from '../lib/utils';
 import type { FeaturesDataType } from '../types';
+import { TextButton } from './text-button';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
     data: FeaturesDataType;
@@ -44,16 +45,7 @@ export const FeaturesCard = ({ data, ...rest }: Props) => {
             <h3 className="mt-12 font-heading text-3xl font-black">{title}</h3>
             <p className="mt-4 text-lg text-zinc-400">{description}</p>
             <div className="mt-12 flex items-center justify-between">
-                <button
-                    className={cn(
-                        'font-heading text-sm font-extrabold uppercase tracking-wider text-fuchsia-500',
-                        color === 'lime' && 'text-lime-500',
-                        color === 'cyan' && 'text-cyan-500',
-                        color === 'violet' && 'text-violet-500'
-                    )}
-                >
-                    Learn more
-                </button>
+                <TextButton color={color}>Learn more</TextButton>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

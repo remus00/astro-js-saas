@@ -1,6 +1,6 @@
 import type { FeaturesDataType } from '../types';
 
-export const featuresData = [
+const featuresData = [
     {
         image: '/assets/images/pill.png',
         title: 'Revolutionary Blockchainb API',
@@ -30,3 +30,11 @@ export const featuresData = [
         color: 'violet',
     },
 ] satisfies FeaturesDataType[];
+
+const listItems = [
+    'Experience unparalleled security and scalability',
+    'Fully benefit from scalable network effects',
+    'Unlock the potential of decentralized networks',
+];
+
+export { featuresData, listItems };

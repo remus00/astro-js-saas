@@ -2,5 +2,5 @@ export interface FeaturesDataType {
     image: string;
     title: string;
     description: string;
-    color: string;
+    color: 'lime' | 'cyan' | 'violet' | 'fuchsia';
 }
